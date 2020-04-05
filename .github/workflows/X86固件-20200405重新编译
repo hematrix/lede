@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 我的云编译测试-20200405(X86平台)
+name: 我的云编译测试-20200405(X86平台)第一次编译
 
 on:
   push:
