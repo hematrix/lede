@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 我的云编译测试-20200405-树莓派4固件
+name: 我的云编译测试-20200405-树莓派4固件(增加youtube及部分工具下载）
 
 on:
   push:
@@ -275,6 +275,18 @@ jobs:
           CONFIG_PACKAGE_tree=y
           CONFIG_PACKAGE_vim-fuller=y
           CONFIG_PACKAGE_wget=y
+          #disc
+          CONFIG_PACKAGE_fdisk=y
+          CONFIG_PACKAGE_cfdisk=y
+          CONFIG_PACKAGE_lsblk=y
+          #Editors
+          CONFIG_PACKAGE_nano=y
+          CONFIG_PACKAGE_vim-full=y
+          EOF
+          # streaming:
+          cat >> .config <<EOF
+          CONFIG_PACKAGE_youtube-dl=y
+          CONFIG_PACKAGE_youtube-dl-src=y
           EOF
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           cat >> .config <<EOF
