@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 我的云编译测试-20200405-树莓派4固件(增加youtube及部分工具下载）
+name: 我的云编译测试-20200405-树莓派2、3固件(增加youtube及部分工具下载）
 
 on:
   push:
@@ -95,8 +95,8 @@ jobs:
           # 编译树莓派4B固件:
           cat >> .config <<EOF
           CONFIG_TARGET_bcm27xx=y
-          CONFIG_TARGET_bcm27xx_bcm2711=y
-          CONFIG_TARGET_bcm27xx_bcm2711_DEVICE_rpi-4=y
+          CONFIG_TARGET_bcm27xx_bcm2709=y
+          CONFIG_TARGET_bcm27xx_bcm2709_DEVICE_rpi-2=y
           EOF
           # 固件压缩:
           cat >> .config <<EOF
