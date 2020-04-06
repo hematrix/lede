@@ -281,7 +281,6 @@ jobs:
           CONFIG_PACKAGE_lsblk=y
           #Editors
           CONFIG_PACKAGE_nano=y
-          CONFIG_PACKAGE_vim-full=y
           EOF
           # streaming:
           cat >> .config <<EOF
