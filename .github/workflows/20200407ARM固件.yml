@@ -9,9 +9,9 @@
 
 name: 我的云编译测试-20200405-树莓派2、3固件
 
-on:
-  push:
-    branches: 
+#on:
+  #push:
+    #branches: 
       - master
   schedule:
     - cron: 0 20 * * *
